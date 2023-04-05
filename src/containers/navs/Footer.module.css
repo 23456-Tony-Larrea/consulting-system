@@ -1,0 +1,5 @@
+.containerFooter{
+    display: flex;
+    /* background-color: red; */
+    min-width: 93%;
+}

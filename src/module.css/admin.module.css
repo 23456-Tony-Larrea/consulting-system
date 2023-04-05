@@ -1,0 +1,277 @@
+.titleConsulta {
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 4px solid#005DA2;
+  box-shadow: 0px 24px 10px -22px rgb(45, 45, 67);
+  border-radius: 89% 11% 82% 18% / 70% 100% 0% 30%;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+}
+.searchBar {
+  border: 2px solid #005da2;
+  max-width: 400px;
+  height: 100%;
+  outline: none !important;
+  border-radius: 3px;
+  margin: 5px;
+  padding: none;
+}
+.bottonSearchBar {
+  box-shadow: 0px 24px 50px -12px rgba(45, 45, 67, 0.12);
+  /* font-weight: bold; */
+  font-size: 15px;
+  /* font-family: sans-serif; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #005da2;
+  border-radius: 70% 30% 70% 30% / 0% 100% 0% 100%;
+  /* max-width: 400px; */
+  /* height: 35px; */
+
+  display: flex;
+  flex-direction: row;
+  background-color: #005da2;
+  color: #fafdfc;
+  /* color: white; */
+  /* height: 40px; */
+  margin-left: 10px;
+ 
+}
+.bottonSearchBar:hover {
+  background-color: transparent;
+  color: #005da2;
+  border-color: #005da2;
+}
+/* .bottonSearchBar:focus {
+    background-color: white;
+} */
+.acordionDivPdf {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+.divDescargaPdf {
+  position: relative;
+}
+.descargarPdf {
+  position: static;
+ margin-left: 50%;
+ transform: translate(-50%);
+ margin-top: 10px;
+  
+}
+.acordionDivPdf input::-webkit-file-upload-button {
+  border: 1px solid #005da2 !important;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 15% 85% 15% 85% / 100% 0% 100% 0% !important;
+  background-color: #005da2;
+  color: #fafdfc;
+  width: 11em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.boton {
+  background-color: #005da2;
+  color: #fafdfc;
+  border-radius: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.descargarPdf:hover {
+  border: 2px solid #005da2;
+  color: #005da2;
+  background-color: #fafdfc;
+}
+
+@media screen and (max-width: 575px) {
+  .divDescargaPdf {
+    display: block;
+  }
+  .descargarPdf {
+    display: block;
+
+    bottom: 17px;
+    right: 17px;
+  }
+  .descargarPdf:hover {
+    border: 2px solid #005da2;
+    color: #005da2;
+    background-color: #fafdfc;
+  }
+}
+
+.inputfilecontainer {
+  position: relative;
+}
+
+.inputfiletrigger {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fafdfc;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inputfile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.contenedorEmpresas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.searchBarEmpresas {
+  border: 2px solid #005da2;
+  max-width: 400px;
+  height: 100%;
+  outline: none !important;
+  border-radius: 3px;
+  margin: 20px;
+  padding: none;
+  left: 50%;
+  transform: translateX(-50%);
+  right: auto;
+}
+.contenedorHijo {
+  display: flex;
+  margin: 10px;
+}
+@media (max-width: 408px) {
+  .contenedorHijo {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+.modal {
+  width:50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 1%;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fafdfc;
+  margin-bottom: 100px;
+
+
+}
+.modal h1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 4px solid#206294;
+  box-shadow: 0px 24px 10px -22px rgb(45, 45, 67);
+  border-radius: 89% 11% 82% 18% / 70% 100% 0% 30%;
+}
+/* .modal div {
+  display: flex;
+  align-items: center;
+} */
+.modal body {
+  background-color: red;
+}
+.divNotas1 {
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(213, 227, 255);
+  border-radius: 5px;
+  overflow: auto;
+}
+.divNotas {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+min-width: 500px;
+max-width: 500px;
+min-height: 500px;
+max-height: 500px;
+    overflow: auto;
+
+}
+.select svg {
+  /* background-color: red; */
+  display: none;
+  outline: none !important;
+}
+.select span {
+  display: none;
+  outline: none !important;
+}
+
+.select div {
+  border: none;
+  /* background-color: transparent; */
+  outline: none !important;
+  text-align: center !important;
+}
+.select div:active {
+  border: none;
+  outline: none !important;
+}
+.select div:focus {
+  border: none;
+  outline: none !important;
+}
+.select div:current {
+  border: none;
+  outline: none !important;
+}
+.select {
+  border: 2px solid #005da2;
+  /* border-radius: 15% 85% 15% 85% / 100% 0% 100% 0% !important; */
+  width: 300px;
+  height: 42px;
+  outline: none !important;
+  border-radius: 3px;
+  margin: 5px;
+background-color: #fafdfc;
+}
+.divSelect0 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+
+}
+.divSelect {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+.divBotonSelect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+.divEmpresas {
+  width: 100%;
+}
+.divPagYX{
+  display: flex;
+  justify-content: space-between;
+}
