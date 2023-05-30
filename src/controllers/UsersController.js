@@ -38,6 +38,7 @@ export const gerSearchForFLName = async (req, res) => {
         ['segundo_nombre', 'ASC'],
       ], */
       limit: 1000,
+      //a
     });
 
     res.status(200).json(users);
